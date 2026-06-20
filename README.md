@@ -13,6 +13,7 @@ for real-time loan data retrieval.
 ![EMI Schedule](screenshots/emi-schedule.png)
 
 ## Architecture
+```
 Customer Query
       ↓
 Agentforce Service Agent
@@ -22,7 +23,7 @@ Agent Topics (Loan Status / EMI Schedule / General FAQ)
 Apex Invocable Actions (@InvocableMethod)
       ↓
 Custom Objects (Loan_Account__c / EMI_Schedule__c)
-
+```
 ## Key Design Decision — Dual Apex Architecture
 
 Each Apex class serves two consumers:
