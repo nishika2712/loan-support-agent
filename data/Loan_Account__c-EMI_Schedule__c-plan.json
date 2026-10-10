@@ -1,0 +1,14 @@
+[
+    {
+        "sobject": "Loan_Account__c",
+        "files": [
+            "Loan_Account__c.json"
+        ]
+    },
+    {
+        "sobject": "EMI_Schedule__c",
+        "files": [
+            "EMI_Schedule__c.json"
+        ]
+    }
+]

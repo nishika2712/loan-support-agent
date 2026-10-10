@@ -1,0 +1,81 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Loan_Account__c",
+                "referenceId": "Loan_Account__cRef1"
+            },
+            "Loan_Number__c": "LN-001",
+            "Customer_Name__c": "Amit Sharma",
+            "Principal_Amount__c": 500000,
+            "Outstanding_Balance__c": 342000,
+            "EMI_Amount__c": 12500,
+            "Status__c": "Active",
+            "Next_Due_Date__c": "2026-06-05"
+        },
+        {
+            "attributes": {
+                "type": "Loan_Account__c",
+                "referenceId": "Loan_Account__cRef2"
+            },
+            "Loan_Number__c": "LN-003",
+            "Customer_Name__c": "Rohit Verma",
+            "Principal_Amount__c": 300000,
+            "Outstanding_Balance__c": 0,
+            "EMI_Amount__c": 9000,
+            "Status__c": "Closed"
+        },
+        {
+            "attributes": {
+                "type": "Loan_Account__c",
+                "referenceId": "Loan_Account__cRef3"
+            },
+            "Loan_Number__c": "LN-002",
+            "Customer_Name__c": "Priya Mehta",
+            "Principal_Amount__c": 750000,
+            "Outstanding_Balance__c": 610000,
+            "EMI_Amount__c": 18750,
+            "Status__c": "Active",
+            "Next_Due_Date__c": "2026-06-10"
+        },
+        {
+            "attributes": {
+                "type": "Loan_Account__c",
+                "referenceId": "Loan_Account__cRef4"
+            },
+            "Loan_Number__c": "LN-004",
+            "Customer_Name__c": "Sneha Iyer",
+            "Principal_Amount__c": 1000000,
+            "Outstanding_Balance__c": 875000,
+            "EMI_Amount__c": 25000,
+            "Status__c": "Active",
+            "Next_Due_Date__c": "2026-06-15"
+        },
+        {
+            "attributes": {
+                "type": "Loan_Account__c",
+                "referenceId": "Loan_Account__cRef5"
+            },
+            "Loan_Number__c": "LN-005",
+            "Customer_Name__c": "Karan Malhotra",
+            "Principal_Amount__c": 450000,
+            "Outstanding_Balance__c": 390000,
+            "EMI_Amount__c": 11250,
+            "Status__c": "Defaulted",
+            "Next_Due_Date__c": "2026-06-01"
+        },
+        {
+            "attributes": {
+                "type": "Loan_Account__c",
+                "referenceId": "Loan_Account__cRef6"
+            },
+            "Loan_Number__c": "LN-006",
+            "Customer_Name__c": "Divya Nair",
+            "Principal_Amount__c": 600000,
+            "Outstanding_Balance__c": 480000,
+            "EMI_Amount__c": 15000,
+            "Status__c": "Active",
+            "Next_Due_Date__c": "2026-06-20"
+        }
+    ]
+}

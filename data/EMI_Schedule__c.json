@@ -1,0 +1,204 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef1"
+            },
+            "Amount__c": 12500,
+            "Due_Date__c": "2026-07-05",
+            "Status__c": "Pending",
+            "Loan_Account__c": "@Loan_Account__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef2"
+            },
+            "Amount__c": 12500,
+            "Due_Date__c": "2026-04-05",
+            "Status__c": "Paid",
+            "Loan_Account__c": "@Loan_Account__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef3"
+            },
+            "Amount__c": 12500,
+            "Due_Date__c": "2026-06-05",
+            "Status__c": "Pending",
+            "Loan_Account__c": "@Loan_Account__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef4"
+            },
+            "Amount__c": 12500,
+            "Due_Date__c": "2026-05-05",
+            "Status__c": "Paid",
+            "Loan_Account__c": "@Loan_Account__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef5"
+            },
+            "Amount__c": 18750,
+            "Due_Date__c": "2026-07-10",
+            "Status__c": "Pending",
+            "Loan_Account__c": "@Loan_Account__cRef3"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef6"
+            },
+            "Amount__c": 18750,
+            "Due_Date__c": "2026-06-10",
+            "Status__c": "Pending",
+            "Loan_Account__c": "@Loan_Account__cRef3"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef7"
+            },
+            "Amount__c": 18750,
+            "Due_Date__c": "2026-05-10",
+            "Status__c": "Overdue",
+            "Loan_Account__c": "@Loan_Account__cRef3"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef8"
+            },
+            "Amount__c": 18750,
+            "Due_Date__c": "2026-04-10",
+            "Status__c": "Paid",
+            "Loan_Account__c": "@Loan_Account__cRef3"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef9"
+            },
+            "Amount__c": 25000,
+            "Due_Date__c": "2026-06-15",
+            "Status__c": "Pending",
+            "Loan_Account__c": "@Loan_Account__cRef4"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef10"
+            },
+            "Amount__c": 25000,
+            "Due_Date__c": "2026-05-15",
+            "Status__c": "Paid",
+            "Loan_Account__c": "@Loan_Account__cRef4"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef11"
+            },
+            "Amount__c": 25000,
+            "Due_Date__c": "2026-04-15",
+            "Status__c": "Paid",
+            "Loan_Account__c": "@Loan_Account__cRef4"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef12"
+            },
+            "Amount__c": 25000,
+            "Due_Date__c": "2026-07-15",
+            "Status__c": "Pending",
+            "Loan_Account__c": "@Loan_Account__cRef4"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef13"
+            },
+            "Amount__c": 11250,
+            "Due_Date__c": "2026-06-01",
+            "Status__c": "Pending",
+            "Loan_Account__c": "@Loan_Account__cRef5"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef14"
+            },
+            "Amount__c": 11250,
+            "Due_Date__c": "2026-05-01",
+            "Status__c": "Overdue",
+            "Loan_Account__c": "@Loan_Account__cRef5"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef15"
+            },
+            "Amount__c": 11250,
+            "Due_Date__c": "2026-04-01",
+            "Status__c": "Overdue",
+            "Loan_Account__c": "@Loan_Account__cRef5"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef16"
+            },
+            "Amount__c": 11250,
+            "Due_Date__c": "2026-03-01",
+            "Status__c": "Overdue",
+            "Loan_Account__c": "@Loan_Account__cRef5"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef17"
+            },
+            "Amount__c": 15000,
+            "Due_Date__c": "2026-07-20",
+            "Status__c": "Pending",
+            "Loan_Account__c": "@Loan_Account__cRef6"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef18"
+            },
+            "Amount__c": 15000,
+            "Due_Date__c": "2026-06-20",
+            "Status__c": "Pending",
+            "Loan_Account__c": "@Loan_Account__cRef6"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef19"
+            },
+            "Amount__c": 15000,
+            "Due_Date__c": "2026-05-20",
+            "Status__c": "Paid",
+            "Loan_Account__c": "@Loan_Account__cRef6"
+        },
+        {
+            "attributes": {
+                "type": "EMI_Schedule__c",
+                "referenceId": "EMI_Schedule__cRef20"
+            },
+            "Amount__c": 15000,
+            "Due_Date__c": "2026-04-20",
+            "Status__c": "Paid",
+            "Loan_Account__c": "@Loan_Account__cRef6"
+        }
+    ]
+}
