@@ -177,48 +177,6 @@
         <includeInPrompt>true</includeInPrompt>
         <label>Routable Id</label>
     </contextVariables>
-    <contextVariables>
-        <contextVariableMappings>
-            <SObjectType>VoiceCall</SObjectType>
-            <fieldName>VoiceCall.Id</fieldName>
-            <messageType>WhatsApp</messageType>
-        </contextVariableMappings>
-        <contextVariableMappings>
-            <SObjectType>VoiceCall</SObjectType>
-            <fieldName>VoiceCall.Id</fieldName>
-            <messageType>AppleBusinessChat</messageType>
-        </contextVariableMappings>
-        <contextVariableMappings>
-            <SObjectType>VoiceCall</SObjectType>
-            <fieldName>VoiceCall.Id</fieldName>
-            <messageType>Custom</messageType>
-        </contextVariableMappings>
-        <contextVariableMappings>
-            <SObjectType>VoiceCall</SObjectType>
-            <fieldName>VoiceCall.Id</fieldName>
-            <messageType>EmbeddedMessaging</messageType>
-        </contextVariableMappings>
-        <contextVariableMappings>
-            <SObjectType>VoiceCall</SObjectType>
-            <fieldName>VoiceCall.Id</fieldName>
-            <messageType>Line</messageType>
-        </contextVariableMappings>
-        <contextVariableMappings>
-            <SObjectType>VoiceCall</SObjectType>
-            <fieldName>VoiceCall.Id</fieldName>
-            <messageType>Text</messageType>
-        </contextVariableMappings>
-        <contextVariableMappings>
-            <SObjectType>VoiceCall</SObjectType>
-            <fieldName>VoiceCall.Id</fieldName>
-            <messageType>Facebook</messageType>
-        </contextVariableMappings>
-        <dataType>Id</dataType>
-        <description>This variable may also be referred to as VoiceCall Id</description>
-        <developerName>VoiceCallId</developerName>
-        <includeInPrompt>true</includeInPrompt>
-        <label>Voice Call Id</label>
-    </contextVariables>
     <description>An AI-powered conversational agent that assists customers with loan servicing queries, including loan status, EMI schedules, outstanding balances, and repayment information for financial services platforms.</description>
     <label>Loan Support Agent</label>
     <logPrivateConversationData>true</logPrivateConversationData>
