@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlannerBundle xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>An AI-powered conversational agent that assists customers with loan servicing queries, including loan status, EMI schedules, outstanding balances, and repayment information for financial services platforms.</description>
+    <localActionLinks>
+        <genAiFunctionName>AnswerQuestionsWithKnowledge_16jg8000000RtTS</genAiFunctionName>
+    </localActionLinks>
+    <localTopicLinks>
+        <genAiPluginName>EMI_Schedule_Inquiry_16jg8000000RtTS</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>General_Loan_FAQ_16jg8000000RtTS</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>Loan_Status_Inquiry_16jg8000000RtTS</genAiPluginName>
+    </localTopicLinks>
+    <localTopics>
+        <fullName>Loan_Status_Inquiry_16jg8000000RtTS</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Use this topic when a customer asks about their loan status, outstanding balance, current loan details, or next EMI due date.</description>
+        <developerName>Loan_Status_Inquiry_16jg8000000RtTS</developerName>
+        <genAiPluginInstructions>
+            <description>Greet the customer and ask for their loan number in the format LN-001.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 1</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once the loan number is provided, call the Get Loan Status action.</description>
+            <developerName>instruction_2</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 2</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Return the loan details clearly to the customer including status, outstanding balance, EMI amount and next due date.</description>
+            <developerName>instruction_3</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 3</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the loan status is Defaulted, respond with empathy and advise the customer to contact their loan officer immediately.</description>
+            <developerName>instruction_4</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 4</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the loan status is Closed, congratulate the customer and confirm no further EMIs are due.</description>
+            <developerName>instruction_5</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 5</masterLabel>
+            <sortOrder>5</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If no loan is found, ask the customer to verify their loan number and try again.</description>
+            <developerName>instruction_6</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 6</masterLabel>
+            <sortOrder>6</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ask if there is anything else you can help with.</description>
+            <developerName>instruction_7</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 7</masterLabel>
+            <sortOrder>7</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>Get_Loan_Status_179g8000000oui9</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Get_Loan_Status_179g8000000oui9</fullName>
+            <description>Retrieves the current loan status, outstanding balance, next EMI due date, and EMI amount for a customer based on their loan number.</description>
+            <developerName>Get_Loan_Status_179g8000000oui9</developerName>
+            <invocationTarget>LoanStatusAction</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Get_Loan_Status</localDeveloperName>
+            <masterLabel>Get Loan Status</masterLabel>
+            <progressIndicatorMessage>Fetching your loan details...</progressIndicatorMessage>
+            <source>Get_Loan_Status</source>
+        </localActions>
+        <localDeveloperName>Loan_Status_Inquiry</localDeveloperName>
+        <masterLabel>Loan Status Inquiry</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Handle all queries related to loan status, outstanding balance, and next EMI due date. Always ask for the loan number in format LN-001 before proceeding. Call the Get Loan Status action to retrieve information.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>EMI_Schedule_Inquiry_16jg8000000RtTS</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Use this topic when a customer asks about upcoming EMI payments, payment schedule, due dates, or pending instalments.</description>
+        <developerName>EMI_Schedule_Inquiry_16jg8000000RtTS</developerName>
+        <genAiPluginInstructions>
+            <description>Ask the customer for their loan number in the format LN-001.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 1</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once provided, call the Get EMI Schedule action.</description>
+            <developerName>instruction_2</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 2</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Present the upcoming pending EMIs clearly showing the due date and amount for each instalment.</description>
+            <developerName>instruction_3</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 3</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If no pending EMIs are found, inform the customer that their loan may be fully paid or closed.</description>
+            <developerName>instruction_4</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 4</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If EMIs show Overdue status in the results, respond with empathy and suggest contacting their loan officer.</description>
+            <developerName>instruction_5</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 5</masterLabel>
+            <sortOrder>5</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ask if there is anything else you can help with.</description>
+            <developerName>instruction_6</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 6</masterLabel>
+            <sortOrder>6</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>Get_EMI_Schedules_179g8000000oujl</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Get_EMI_Schedules_179g8000000oujl</fullName>
+            <description>Retrieves the next 3 upcoming pending EMI payments for a customer based on their loan number.</description>
+            <developerName>Get_EMI_Schedules_179g8000000oujl</developerName>
+            <invocationTarget>EMIScheduleAction</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Get_EMI_Schedules</localDeveloperName>
+            <masterLabel>Get EMI Schedules</masterLabel>
+            <progressIndicatorMessage>Fetching your EMI schedule...</progressIndicatorMessage>
+            <source>Get_EMI_Schedules</source>
+        </localActions>
+        <localDeveloperName>EMI_Schedule_Inquiry</localDeveloperName>
+        <masterLabel>EMI Schedule Inquiry</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Handle all queries related to EMI payment schedules. Always ask for the loan number in format LN-001 before proceeding. Call the Get EMI Schedule action to retrieve upcoming pending EMIs.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>General_Loan_FAQ_16jg8000000RtTS</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Use this topic for general questions about missed EMIs, repayment options, loan closure, or any query not covered by loan status or EMI schedule topics.</description>
+        <developerName>General_Loan_FAQ_16jg8000000RtTS</developerName>
+        <language>en_US</language>
+        <localDeveloperName>General_Loan_FAQ</localDeveloperName>
+        <masterLabel>General Loan FAQ</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Answer general loan servicing questions without calling any external action. If a customer mentions a missed EMI, respond with empathy and advise them to contact their loan officer. If asked about loan closure, confirm the loan is closed and no further EMIs are due. Keep responses professional and concise.</scope>
+    </localTopics>
+    <masterLabel>Loan Support Agent</masterLabel>
+    <plannerActions>
+        <fullName>AnswerQuestionsWithKnowledge_16jg8000000RtTS</fullName>
+        <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+        <developerName>AnswerQuestionsWithKnowledge_16jg8000000RtTS</developerName>
+        <invocationTarget>streamKnowledgeSearch</invocationTarget>
+        <invocationTargetType>standardInvocableAction</invocationTargetType>
+        <isConfirmationRequired>false</isConfirmationRequired>
+        <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+        <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+        <masterLabel>Answer Questions with Knowledge</masterLabel>
+        <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+        <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+    </plannerActions>
+    <plannerSurfaces>
+        <adaptiveResponseAllowed>true</adaptiveResponseAllowed>
+        <callRecordingAllowed>false</callRecordingAllowed>
+        <surface>SurfaceAction__Messaging</surface>
+        <surfaceType>Messaging</surfaceType>
+    </plannerSurfaces>
+    <plannerSurfaces>
+        <adaptiveResponseAllowed>true</adaptiveResponseAllowed>
+        <callRecordingAllowed>false</callRecordingAllowed>
+        <surface>SurfaceAction__CustomerWebClient</surface>
+        <surfaceType>CustomerWebClient</surfaceType>
+    </plannerSurfaces>
+    <plannerType>AiCopilot__ReAct</plannerType>
+    <ruleExpressions>
+        <conditions>
+            <leftOperand>isVerified</leftOperand>
+            <leftOperandType>Variable</leftOperandType>
+            <operator>equal</operator>
+            <rightOperandValue>true</rightOperandValue>
+        </conditions>
+        <expression>Verified_User</expression>
+        <expressionLabel>Verified User</expressionLabel>
+        <expressionName>Verified_User</expressionName>
+        <expressionType>sel</expressionType>
+    </ruleExpressions>
+</GenAiPlannerBundle>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Retrieves the current loan status, outstanding balance, next EMI due date, and EMI amount for a customer based on their loan number.</description>
+    <developerName>Get_Loan_Status</developerName>
+    <invocationTarget>LoanStatusAction</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <localDeveloperName>Get_Loan_Status</localDeveloperName>
+    <masterLabel>Get Loan Status</masterLabel>
+    <progressIndicatorMessage>Fetching your loan details...</progressIndicatorMessage>
+</GenAiFunction>

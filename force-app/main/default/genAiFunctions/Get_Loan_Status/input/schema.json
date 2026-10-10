@@ -1,0 +1,14 @@
+{
+  "required" : [ "loanNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "loanNumber" : {
+      "title" : "loanNumber",
+      "description" : "The unique loan number provided by the customer. Format is LN-001, LN-002, etc.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

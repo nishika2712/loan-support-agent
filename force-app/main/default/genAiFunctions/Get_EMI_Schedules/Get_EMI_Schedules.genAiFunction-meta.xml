@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Retrieves the next 3 upcoming pending EMI payments for a customer based on their loan number.</description>
+    <developerName>Get_EMI_Schedules</developerName>
+    <invocationTarget>EMIScheduleAction</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <localDeveloperName>Get_EMI_Schedules</localDeveloperName>
+    <masterLabel>Get EMI Schedules</masterLabel>
+    <progressIndicatorMessage>Fetching your EMI schedule...</progressIndicatorMessage>
+</GenAiFunction>
