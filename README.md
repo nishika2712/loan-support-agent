@@ -41,7 +41,6 @@ from a single class.
 - Lightning Web Components with dynamic rendering
 - Custom Objects: Loan Account, EMI Schedule, Support Query Log
 - SOQL with relationship traversal across Master-Detail
-- Platform Events architecture (Agentforce routing)
 
 ## Custom Objects
 
@@ -53,9 +52,6 @@ from a single class.
 - Master-Detail to Loan Account
 - Due Date, Amount, Status (Pending/Paid/Overdue)
 
-**Support_Query__c**
-- Query Type, Response Given, Timestamp
-
 ## Agentforce Configuration
 
 Three topics configured:
@@ -66,19 +62,15 @@ Three topics configured:
 ## How to Deploy
 
 1. Clone this repository
-2. Authorise your Salesforce org:
-```bash
-   sf org login web --alias myorg
-```
-3. Deploy metadata:
-```bash
-   sf project deploy start --source-dir force-app
-```
-4. Load sample data from /data/sample-loans.json
-5. Configure Agentforce Agent Actions pointing to 
-   LoanStatusAction and EMIScheduleAction
-6. Add loanSupportChat LWC to any Loan Account record page 
-   via App Builder
+2. Authorise your Dev Hub: sf org login web --set-default-dev-hub
+3. Create a scratch org:
+   sf org create scratch --alias loan-scratch --duration-days 7 --definition-file config/project-scratch-def.json
+4. Deploy: sf project deploy start --source-dir force-app --target-org loan-scratch
+5. Assign access: sf org assign permset --name Loan_Agent_Access --target-org loan-scratch
+6. Load sample data: sf data import tree --plan data/Loan_Account__c-EMI_Schedule__c-plan.json --target-org loan-scratch
+7. Run tests: sf apex run test --code-coverage --result-format human --wait 10 --target-org loan-scratch
+8. Configure the Agentforce agent topics and actions (see docs/agent-config.md)
+9. Add the loanSupportChat LWC to a Loan Account record page via App Builder
 
 ## Test Coverage
 
