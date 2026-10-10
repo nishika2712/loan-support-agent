@@ -82,6 +82,5 @@ Three topics configured:
 
 - Einstein Sentiment Analysis on customer queries
 - Escalation Flow to human agent for Defaulted loans
-- Platform Event logging to Support_Query__c on every Agent interaction
 - Named Credential based authentication for external loan bureau APIs
 - Experience Cloud deployment for customer-facing portal
