@@ -21,7 +21,7 @@ Customer Query
       ↓
 Agentforce Service Agent (Loan_Support_Agent)
       ↓
-Topics: Loan Status Inquiry / EMI Schedule Inquiry / General loan questions
+Topics: Loan Status Inquiry / EMI Schedule Inquiry / General Loan FAQ
       ↓
 Agent Actions (GenAiFunction) → Apex Invocable Methods
       ↓
@@ -139,8 +139,9 @@ Clean scratch org run: 4 tests pass.
 - Escalation flow to a human agent for defaulted loans
 - Platform Event logging of every agent interaction to a support query log object
 - Named Credential authentication for external loan bureau APIs
-- A Data 360 retriever to ground answers to general loan questions in policy documents
+- A Data 360 retriever to ground answers to general loan FAQ in policy documents
 - Experience Cloud deployment for a customer-facing portal
+- Identity verification (authenticated session or OTP) before returning account details, gating the actions on the verification variable
 
 ## Author
 
